@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: josue
+  Date: 21/3/2024
+  Time: 11:25
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <h:outputStylesheet name="css/bootstrap.min.css"/>
+    <h:outputStylesheet name="css/estilo.css"/>
+
+    <title>Agregar Nuevo Producto</title>
+</h:head>
+
+<h:body>
+
+    <div class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <h:outputLink styleClass="nav-link" value="faces/listarProducto.xhtml"><i class="fas fa-list"></i> Listar Productos</h:outputLink>
+                    </li>
+                    <li class="nav-item">
+                        <h:outputLink styleClass="nav-link" value="nuevoProducto.xhtml"><i class="fas fa-plus"></i> Nuevo Producto</h:outputLink>
+                    </li>
+                </ul>
+                <!-- Opción de inicio de sesión / cierre de sesión -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <h:outputLink styleClass="nav-link" value="login.xhtml">
+                            <i class="fas fa-user"></i> Iniciar Sesión
+                        </h:outputLink>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 centered-form">
+                <div class="card">
+                    <div class="card-header text-center">
+                        Iniciar Sesión
+                    </div>
+                    <div class="card-body">
+                        <h:form class="mx-auto text-center">
+                            <div class="mb-3">
+                                <h:outputLabel for="email" styleClass="form-label">Correo Electrónico</h:outputLabel>
+                                <h:inputText type="email" styleClass="form-control" id="email" aria-describedby="emailHelp"/>
+                            </div>
+                            <div class="mb-3">
+                                <h:outputLabel for="password" styleClass="form-label">Contraseña</h:outputLabel>
+                                <h:inputSecret type="password" styleClass="form-control" id="password"/>
+                            </div>
+                            <h:commandButton type="submit" styleClass="btn btn-primary btn-block" value="Iniciar"></h:commandButton>
+                        </h:form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <div class="footer mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4 class="text-white">Universidad Don Bosco | Desarrollo de Aplicaciones con Web Frameworks</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin del Footer -->
+
+</h:body>
+
+</html>

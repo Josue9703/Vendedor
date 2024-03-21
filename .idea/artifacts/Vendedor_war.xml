@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Vendedor:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Vendedor</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Vendedor-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Vendedor:war exploded" />
+    </root>
+  </artifact>
+</component>
